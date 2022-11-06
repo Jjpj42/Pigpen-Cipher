@@ -26,7 +26,7 @@
 <body >
     <div class="container">
         <form action="/upload_Text" style = "text-align:center" action='/' , method='post' enctype="multipart/form-data">
-            <div  class="text" font-size: 15px  >Pigpen Cipher</div>
+            <div  class="text" >Pigpen Cipher</div>
             <br>
             <br>
             <div class="form-group">
@@ -34,94 +34,45 @@
                 <input type="text" class="form-control" name="cipher-text" >
                 <br>
                 <button type="submit" class="btn btn-primary" value="Enter">Enter</button>
-              </div>
+            </div>
 
             <div class="mt-3">
                 <label for="" class="text-font"> Result </label>
                 <br>
-                <center><h3> Text : {{arr}}</h3></center>
+                <center><h3> Text : {{Arr}} </h3></center>
                 <br>
-                {% for i in range(0,Num)%}
-                    {%if arr[i] == 'a' %}
-                    <img src="/static/images/a.PNG " width=150 height=150/>
+                {%for i in Arr%}
+                    {%if i == 'a'%}<img src="/static/images/a.PNG " width=150 height=150/>
+                    {%elif i == 'b'%}<img src="/static/images/b.PNG " width=150 height=150/>
+                    {%elif i == 'c' %}<img src="/static/images/c.PNG " width=150 height=150/>
+                    {%elif i == 'd' %}<img src="/static/images/d.PNG " width=150 height=150/>
+                    {%elif i == 'e' %}<img src="/static/images/e.PNG " width=150 height=150/>
+                    {%elif i == 'f' %}<img src="/static/images/f.PNG " width=150 height=150/>
+                    {%elif i == 'g' %}<img src="/static/images/g.PNG " width=150 height=150/>
+                    {%elif i == 'h' %}<img src="/static/images/h.PNG " width=150 height=150/>
+                    {%elif i == 'i' %}<img src="/static/images/i.PNG " width=150 height=150/>
+                    {%elif i == 'j' %}<img src="/static/images/j.PNG " width=150 height=150/>
+                    {%elif i == 'k' %}<img src="/static/images/k.PNG " width=150 height=150/>
+                    {%elif i == 'l' %}<img src="/static/images/l.PNG " width=150 height=150/>
+                    {%elif i == 'm' %}<img src="/static/images/m.PNG " width=150 height=150/>
+                    {%elif i == 'n' %}<img src="/static/images/i.PNG " width=150 height=150/>
+                    {%elif i == 'o' %}<img src="/static/images/o.PNG " width=150 height=150/>
+                    {%elif i == 'p' %}<img src="/static/images/p.PNG " width=150 height=150/>
+                    {%elif i == 'q' %}<img src="/static/images/q.PNG " width=150 height=150/>
+                    {%elif i == 'r' %}<img src="/static/images/r.PNG " width=150 height=150/>
+                    {%elif i == 's' %}<img src="/static/images/s.PNG " width=150 height=150/>
+                    {%elif i == 't' %}<img src="/static/images/t.PNG " width=150 height=150/>
+                    {%elif i == 'u' %}<img src="/static/images/u.PNG " width=150 height=150/>
+                    {%elif i == 'v' %}<img src="/static/images/v.PNG " width=150 height=150/>
+                    {%elif i == 'w' %}<img src="/static/images/w.PNG " width=150 height=150/>
+                    {%elif i == 'x' %}<img src="/static/images/x.PNG " width=150 height=150/>
+                    {%elif i == 'y' %}<img src="/static/images/y.PNG " width=150 height=150/>
+                    {%elif i == 'z' %}<img src="/static/images/z.PNG " width=150 height=150/>
+                    
                     {%endif%}
-                    {%if arr[i] == 'b' %}
-                    <img src="/static/images/b.PNG " width=150 height=150/>
-                    {%endif%}
-                    {%if arr[i] == 'c' %}
-                    <img src="/static/images/c.PNG " width=150 height=150/>
-                    {%endif%}
-                    {%if arr[i] == 'd' %}
-                    <img src="/static/images/d.PNG " width=150 height=150/>
-                    {%endif%}
-                    {%if arr[i] == 'e' %}
-                    <img src="/static/images/e.PNG " width=150 height=150/>
-                    {%endif%}
-                    {%if arr[i] == 'f' %}
-                    <img src="/static/images/f.PNG " width=150 height=150/>
-                    {%endif%}
-                    {%if arr[i] == 'g' %}
-                    <img src="/static/images/g.PNG " width=150 height=150/>
-                    {%endif%}
-                    {%if arr[i] == 'h' %}
-                    <img src="/static/images/h.PNG " width=150 height=150/>
-                    {%endif%}
-                    {%if arr[i] == 'i' %}
-                    <img src="/static/images/i.PNG " width=150 height=150/>
-                    {%endif%}
-                    {%if arr[i] == 'j' %}
-                    <img src="/static/images/j.PNG " width=150 height=150/>
-                    {%endif%}
-                    {%if arr[i] == 'k' %}
-                    <img src="/static/images/k.PNG " width=150 height=150/>
-                    {%endif%}
-                    {%if arr[i] == 'l' %}
-                    <img src="/static/images/l.PNG " width=150 height=150/>
-                    {%endif%}
-                    {%if arr[i] == 'm' %}
-                    <img src="/static/images/m.PNG " width=150 height=150/>
-                    {%endif%}
-                    {%if arr[i] == 'n' %}
-                    <img src="/static/images/n.PNG " width=150 height=150/>
-                    {%endif%}
-                    {%if arr[i] == 'o' %}
-                    <img src="/static/images/o.PNG " width=150 height=150/>
-                    {%endif%}
-                    {%if arr[i] == 'p' %}
-                    <img src="/static/images/p.PNG " width=150 height=150/>
-                    {%endif%}
-                    {%if arr[i] == 'q' %}
-                    <img src="/static/images/q.PNG " width=150 height=150/>
-                    {%endif%}
-                    {%if arr[i] == 'r' %}
-                    <img src="/static/images/r.PNG " width=150 height=150/>
-                    {%endif%}
-                    {%if arr[i] == 's' %}
-                    <img src="/static/images/s.PNG " width=150 height=150/>
-                    {%endif%}
-                    {%if arr[i] == 't' %}
-                    <img src="/static/images/t.PNG " width=150 height=150/>
-                    {%endif%}
-                    {%if arr[i] == 'u' %}
-                    <img src="/static/images/u.PNG " width=150 height=150/>
-                    {%endif%}
-                    {%if arr[i] == 'v' %}
-                    <img src="/static/images/v.PNG " width=150 height=150/>
-                    {%endif%}
-                    {%if arr[i] == 'w' %}
-                    <img src="/static/images/w.PNG " width=150 height=150/>
-                    {%endif%}
-                    {%if arr[i] == 'x' %}
-                    <img src="/static/images/x.PNG " width=150 height=150/>
-                    {%endif%}
-                    {%if arr[i] == 'y' %}
-                    <img src="/static/images/y.PNG " width=150 height=150/>
-                    {%endif%}
-                    {%if arr[i] == 'z' %}
-                    <img src="/static/images/z.PNG " width=150 height=150/>
-                    {%endif%}
-
                 {%endfor%}
+                
+                
             </div>
           </form>
 
